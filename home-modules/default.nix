@@ -8,6 +8,7 @@
     ./stylix.nix
     ./rofi
     ./ghostty.nix
+    ./nushell.nix
   ];
 
   # catppuccin = {

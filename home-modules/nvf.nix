@@ -30,6 +30,7 @@
         lua.enable = true;
         markdown.enable = true;
         html.enable = true;
+        nu.enable = true;
       };
 
       mini = {
