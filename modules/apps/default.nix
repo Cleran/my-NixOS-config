@@ -15,5 +15,6 @@
     tldr
     aria2
     bat
+    gh
   ];
 }
