@@ -67,8 +67,16 @@
 
         battery = {
           format = "{icon}";
+          format-icons = [
+            "󰁺" "󰁻" "󰁼" "󰁽" "󰁾" "󰁿" "󰂀" "󰂁" "󰂂" "󰁹"
+          ];
           tooltip = true;
           tooltip-format = "{capacity}% {timeTo}";
+          states = {
+            warning = 30;
+            critical = 15;
+          };
+          interval = 60;
         };
 
         clock = {
