@@ -39,9 +39,14 @@
         diff.enable = true;
         hipatterns.enable = true;
         snippets.enable = true;
-        completion.enable = true;
+        # completion.enable = true;
         pairs.enable = true;
         surround.enable = true;
+      };
+
+      autocomplete.blink-cmp = {
+        enable = true;
+        friendly-snippets.enable = true;
       };
 
       statusline = {
@@ -59,11 +64,11 @@
       filetree.neo-tree.enable = true;
       dashboard.dashboard-nvim.enable = true;
 
-      spellcheck.enable = true;
+      # spellcheck.enable = true;
 
       visuals = {
         indent-blankline.enable = true;
-        indent-blankline.setupOpts.scope.exclude.node_type = {"*" = ["dashboard"];};
+        indent-blankline.setupOpts.exclude.filetypes = ["dashboard"];
       };
 
       notify = {
@@ -124,8 +129,8 @@
         {
           key = "<leader>e";
           mode = ["n"];
-          action = "<cmd>Neotree toggle<cr>";
-          desc = "Toggle Filetree sidebar";
+          action = "<cmd>Neotree float<cr>";
+          desc = "Open floating Neotree window";
         }
         {
           key = "<C-h>";
