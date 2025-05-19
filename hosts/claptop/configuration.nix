@@ -13,6 +13,7 @@
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
+  boot.loader.systemd-boot.consoleMode = "max";
 
   networking.hostName = "claptop"; # Define your hostname.
   #networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -61,7 +62,7 @@
   };
 
   # Enable automatic login for the user.
-  services.getty.autologinUser = "cleran";
+  # services.getty.autologinUser = "cleran";
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
