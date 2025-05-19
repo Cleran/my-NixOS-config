@@ -49,6 +49,10 @@
       "$mainMod, j, movefocus, d"
       "$mainMod, k, movefocus, u"
       "$mainMod, l, movefocus, r"
+
+      # set screen brightness
+      ", XF86MonBrightnessDown, exec, brightnessctl set 5%-"
+      ", XF86MonBrightnessUp, exec, brightnessctl set 5%+"
     ];
 
     bindm = [

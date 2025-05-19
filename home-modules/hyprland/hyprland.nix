@@ -8,6 +8,7 @@
     hyprpolkitagent
     hyprland-qtutils
     kitty
+    brightnessctl
   ];
 
   wayland.windowManager.hyprland = {
