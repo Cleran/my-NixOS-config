@@ -7,5 +7,6 @@
     ./apps
     ./stylix.nix
     ./plymouth.nix
+    ./syncthing.nix
   ];
 }

@@ -1,4 +1,4 @@
-{pkgs, ...}: {
+{pkgs,username, ...}: {
   nix.settings = {
     experimental-features = ["nix-command" "flakes"];
     auto-optimise-store = true;
@@ -15,6 +15,6 @@
     enable = true;
     clean.enable = true;
     clean.extraArgs = "--keep-since 7d --keep 5";
-    flake = "/home/cleran/systemconfig";
+    flake = "/home/${username}/systemconfig";
   };
 }
