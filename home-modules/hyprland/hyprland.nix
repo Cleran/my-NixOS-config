@@ -9,6 +9,7 @@
     hyprland-qtutils
     kitty
     brightnessctl
+    hyprshot
   ];
 
   wayland.windowManager.hyprland = {

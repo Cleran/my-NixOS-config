@@ -6,6 +6,7 @@
       "$mainMod, O, exec, rofi -modi emoji -show emoji" # emoji picker
       "$mainMod, Space, exec, rofi -show drun -theme ~/.config/rofi/launcher.rasi"
       "$mainMod, V, exec, cliphist list | rofi -dmenu -theme ~/.config/rofi/picker.rasi | cliphist decode | wl-copy"
+      ",PRINT, exec, hyprshot -m region"
 
       # workspaces
       "$mainMod, 1, workspace, 1"
