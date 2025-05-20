@@ -1,5 +1,6 @@
 {...}: {
   stylix.targets.ghostty.enable = false;
+  home.sessionVariables.TERMINAL = "ghostty";
 
   programs.ghostty = {
     enable = true;

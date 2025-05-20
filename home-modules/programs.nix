@@ -1,9 +1,12 @@
 {pkgs,...}: {
+  home.sessionVariables.BROWSER = "brave";
+
   home.packages = with pkgs; [
     qimgv
     bat-extras.batman
     gedit
     yt-dlp
+    vlc
   ];
 
 	programs = {

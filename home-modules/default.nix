@@ -9,6 +9,7 @@
     ./rofi
     ./ghostty.nix
     ./nushell.nix
+    ./xdg.nix
   ];
 
   # catppuccin = {
