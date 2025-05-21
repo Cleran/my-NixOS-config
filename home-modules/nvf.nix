@@ -15,6 +15,17 @@
         mapleader = " ";
       };
 
+      options = {
+        tabstop = 2;
+        shiftwidth = 0; # if set to 0 it follows tabstop
+        expandtab = true; # expands tabs to spaces
+        wrap = false;
+        cursorline = true;
+        cursorlineopt = "both";
+        confirm = true; # opens confirmation window when exiting a buffer without saving
+        smartcase = true; # enable case sensitive search when using upper case letters
+      };
+
       lsp = {
         formatOnSave = false;
         enable = true;
@@ -84,15 +95,6 @@
       binds = {
         whichKey.enable = true;
         cheatsheet.enable = true;
-      };
-
-      options = {
-        tabstop = 2;
-        shiftwidth = 2;
-        expandtab = true;
-        wrap = false;
-        cursorline = true;
-        cursorlineopt = "both";
       };
 
       # utility.surround = {
