@@ -4,7 +4,6 @@
 
   programs.ghostty = {
     enable = true;
-    enableBashIntegration = true;
     installBatSyntax = true;
 
     settings = {

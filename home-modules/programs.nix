@@ -21,8 +21,6 @@
     btop.enable = true;
     bat.enable = true;
     zoxide = {
-      enableBashIntegration = true;
-      enableNushellIntegration = true;
       enable = true;
     };
     eza = {
