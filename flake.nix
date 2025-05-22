@@ -33,6 +33,7 @@
         specialArgs = {
           inherit inputs;
           inherit username;
+          hostName = "nixos";
         };
 
         modules = [
@@ -44,6 +45,7 @@
         specialArgs = {
           inherit inputs;
           inherit username;
+          hostName = "claptop";
         };
 
         modules = [
