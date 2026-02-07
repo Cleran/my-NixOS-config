@@ -10,6 +10,8 @@
     ./ghostty.nix
     ./nushell.nix
     ./xdg.nix
+    ./ssh.nix
+    ./git.nix
   ];
 
   # catppuccin = {

@@ -1,10 +1,9 @@
 {...}: {
    programs.gnupg.agent = {
      enable = true;
-     enableSSHSupport = true;
+     enableSSHSupport = false;
    };
 
   # Enable the OpenSSH daemon.
    services.openssh.enable = true;
-
 }
