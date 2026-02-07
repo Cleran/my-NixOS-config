@@ -1,7 +1,7 @@
 {pkgs, ...}: {
   fonts.packages = with pkgs; [
     twemoji-color-font
-    noto-fonts-emoji
+    noto-fonts-color-emoji
     noto-fonts-cjk-sans
 
     font-awesome # awesome and material are already in nerd fonts

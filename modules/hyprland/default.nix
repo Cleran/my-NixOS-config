@@ -1,6 +1,7 @@
 {
   pkgs,
   username,
+  lib,
   ...
 }: {
   environment.systemPackages = with pkgs; [
@@ -12,29 +13,46 @@
     enable = true;
   };
 
-  # services.displayManager = {
+  services.displayManager.gdm = {
+    enable = true;
+  };
+  #services.desktopManager.gnome.enable = true; # requirement for gdm
+
+  #   services.displayManager = {
   #   sddm = {
   #     enable = true;
   #     wayland.enable = true;
   #     wayland.compositor = "kwin";
   #     package = pkgs.kdePackages.sddm;
-  #     theme = "catppuccin-mocha";
+  #    #   theme = "catppuccin-mocha";
+  #      settings.Users.Userlist = true;
+  #      theme = "breeze";
   #   };
   #   defaultSession = "hyprland";
   # };
 
-  stylix.targets.regreet.enable = true;
-  programs.regreet.enable = true;
-  services.greetd = {
-    enable = true;
-    # stylix already sets the default session
-    # settings = {
-    #   default_session = {
-    #     user = username;
-    #     command = "${pkgs.greetd.regreet}/bin/regreet";
-    #   };
-    # };
-  };
+  #environment.etc."xdg/wayland-sessions/hyprland.desktop".text = ''
+  #  [Desktop Entry]
+  #  Name=Hyprland
+  #  Comment=Hyprland Wayland Compositor
+  #  Exec=Hyprland
+  #  Type=Application
+  #  NoDisplay=true
+  #  DesktopNames=Hyprland
+  #'';
+
+    #  stylix.targets.regreet.enable = true;
+    #  programs.regreet.enable = true;
+    #  services.greetd = {
+    #    enable = true;
+    #    # stylix already sets the default session
+    #    # settings = {
+    #    #   default_session = {
+    #    #     user = username;
+    #    #     command = "${pkgs.greetd.regreet}/bin/regreet";
+    #    #   };
+    #    # };
+    #  };
 
   security.polkit.enable = true;
   xdg.portal = {
@@ -52,5 +70,12 @@
       support32Bit = true;
       enable = true;
     };
+  };
+
+  # enable automount
+  services = {
+    devmon.enable = lib.mkDefault true;
+    gvfs.enable = lib.mkDefault true;
+    udisks2.enable = lib.mkDefault true;
   };
 }

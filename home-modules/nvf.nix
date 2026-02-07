@@ -1,4 +1,4 @@
-{inputs, ...}: {
+{inputs, lib, ...}: {
   imports = [inputs.nvf.homeManagerModules.default];
 
   home.sessionVariables.EDITOR = "nvim";
@@ -9,7 +9,6 @@
     settings.vim = {
       viAlias = false;
       vimAlias = true;
-      useSystemClipboard = true;
 
       globals = {
         mapleader = " ";
@@ -68,7 +67,7 @@
         };
       };
 
-      theme = {
+      theme = lib.mkForce {
         enable = true;
         name = "catppuccin";
         style = "mocha";

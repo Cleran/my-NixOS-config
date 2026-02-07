@@ -13,10 +13,10 @@
     base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
     polarity = "dark";
 
-    cursor = {
-      package = pkgs.catppuccin-cursors.mochaLight;
-      name = "catppuccin-mocha-light";
-    };
+    #    cursor = {
+    #      package = pkgs.catppuccin-cursors.mochaLight;
+    #      name = "catppuccin-mocha-light";
+    #    };
 
 
     opacity = {
