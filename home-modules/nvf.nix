@@ -28,7 +28,7 @@
       lsp = {
         formatOnSave = false;
         enable = true;
-        inlayHints.enable = false;
+        inlayHints.enable = true;
         trouble.enable = true;
       };
 
@@ -43,6 +43,13 @@
         markdown.enable = true;
         html.enable = true;
         nu.enable = true;
+      };
+
+      diagnostics = {
+        enable = true;
+        config = {
+          virtual_lines = true;
+        };
       };
 
       mini = {
