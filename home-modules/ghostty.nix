@@ -9,7 +9,7 @@
     settings = {
       mouse-hide-while-typing = true;
       # gtk-adwaita = false;
-      theme = "catppuccin-mocha";
+      theme = "Catppuccin Mocha";
       font-family = [ "JetBrainsMono Nerd Font" "Twitter Color Emoji" ];
       font-size = 16;
     };
