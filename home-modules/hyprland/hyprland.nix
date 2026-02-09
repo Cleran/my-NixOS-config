@@ -10,6 +10,7 @@
     kitty
     brightnessctl
     hyprshot
+    dunst
   ];
 
   wayland.windowManager.hyprland = {
@@ -31,6 +32,7 @@
         "ghostty"
         "waybar"
         "systemctl --user start hyprpolkitagent"
+        "dunst"
       ];
 
       "$mainMod" = "SUPER";

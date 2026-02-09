@@ -14,5 +14,6 @@ _: {
     ./syncthing.nix
     ./system.nix
     ./users.nix
+    ./niri
   ];
 }
