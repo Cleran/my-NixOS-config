@@ -9,12 +9,14 @@
     nvf.inputs.nixpkgs.follows = "nixpkgs";
     stylix.url = "github:nix-community/stylix";
     stylix.inputs.nixpkgs.follows = "nixpkgs";
+    nixos-hardware.url = "github:NixOS/nixos-hardware/master";
   };
 
   outputs = {
     self,
     nixpkgs,
     home-manager,
+    nixos-hardware,
     ...
   } @ inputs: let
     system = "x86_64-linux";
@@ -51,6 +53,7 @@
 
         modules = [
           ./hosts/claptop
+          nixos-hardware.nixosModules.lenovo-thinkpad-e14-amd
         ];
       };
     };
