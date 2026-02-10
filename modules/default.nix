@@ -15,6 +15,7 @@ _: {
     ./stylix.nix
     ./syncthing.nix
     ./system.nix
+    ./virtualisation.nix
     ./users.nix
   ];
 }
