@@ -1,5 +1,6 @@
-{inputs, lib, ...}: {
-  imports = [inputs.nvf.homeManagerModules.default];
+{ inputs, lib, ... }:
+{
+  imports = [ inputs.nvf.homeManagerModules.default ];
 
   home.sessionVariables.EDITOR = "nvim";
 
@@ -23,6 +24,12 @@
         cursorlineopt = "both";
         confirm = true; # opens confirmation window when exiting a buffer without saving
         smartcase = true; # enable case sensitive search when using upper case letters
+      };
+
+      clipboard = {
+        enable = true;
+        providers.wl-copy.enable = true;
+        registers = "unnamed,unnamedplus";
       };
 
       lsp = {
@@ -59,7 +66,6 @@
         diff.enable = true;
         hipatterns.enable = true;
         snippets.enable = true;
-        # completion.enable = true;
         pairs.enable = true;
         surround.enable = true;
       };
@@ -84,11 +90,9 @@
       filetree.neo-tree.enable = true;
       dashboard.dashboard-nvim.enable = true;
 
-      # spellcheck.enable = true;
-
       visuals = {
         indent-blankline.enable = true;
-        indent-blankline.setupOpts.exclude.filetypes = ["dashboard"];
+        indent-blankline.setupOpts.exclude.filetypes = [ "dashboard" ];
       };
 
       notify = {
@@ -107,43 +111,43 @@
       keymaps = [
         {
           key = "<leader>dt";
-          mode = ["n"];
+          mode = [ "n" ];
           action = "<cmd>Trouble diagnostics toggle<cr>";
           desc = "Toggle diagnostics list";
         }
         {
           key = "<leader>ff";
-          mode = ["n"];
+          mode = [ "n" ];
           action = "<cmd>Telescope find_files<cr>";
           desc = "Fuzzy find files";
         }
         {
           key = "<leader>e";
-          mode = ["n"];
+          mode = [ "n" ];
           action = "<cmd>Neotree float<cr>";
           desc = "Open floating Neotree window";
         }
         {
           key = "<C-h>";
-          mode = ["i"];
+          mode = [ "i" ];
           action = "<Left>";
           desc = "Move left in insert mode";
         }
         {
           key = "<C-j>";
-          mode = ["i"];
+          mode = [ "i" ];
           action = "<Down>";
           desc = "Move down in insert mode";
         }
         {
           key = "<C-k>";
-          mode = ["i"];
+          mode = [ "i" ];
           action = "<Up>";
           desc = "Move up in insert mode";
         }
         {
           key = "<C-l>";
-          mode = ["i"];
+          mode = [ "i" ];
           action = "<Right>";
           desc = "Move right in insert mode";
         }
