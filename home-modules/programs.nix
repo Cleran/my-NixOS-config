@@ -14,6 +14,8 @@
 		firefox.enable = false;
     brave.enable = true;
 
+    obsidian.enable = true;
+
     vscode.enable = true;
 
     zathura.enable = true;
