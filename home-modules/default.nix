@@ -1,6 +1,7 @@
 {...}: {
   imports = [
     ./bash.nix
+    ./bitwarden.nix
     ./dankmaterialshell.nix
     ./ghostty.nix
     ./git.nix

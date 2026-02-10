@@ -14,6 +14,8 @@
 		firefox.enable = false;
     brave.enable = true;
 
+    vscode.enable = true;
+
     zathura.enable = true;
 
     # CLI
@@ -44,5 +46,8 @@
 
       nix-direnv.enable = true;
     };
+
+    tmux.enable = true;
+    zellij.enable = true;
 	};
 }

@@ -8,6 +8,8 @@
     vscode.enable = false;
     wpaperd.enable = false;
     niri.enable = false;
+
+    zellij.enable = true;
   };
 
   stylix.autoEnable = false;
