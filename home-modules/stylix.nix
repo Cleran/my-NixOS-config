@@ -7,10 +7,13 @@
     hyprland.enable = false;
     vscode.enable = false;
     wpaperd.enable = false;
+    niri.enable = false;
   };
 
+  stylix.autoEnable = false;
+
   stylix.icons = {
-    enable = true;
+    enable = false;
     package = pkgs.papirus-icon-theme;
     dark = "Papirus-Dark";
     light = "Papirus-Light";

@@ -8,8 +8,8 @@
     libappindicator # needed(?) for tray icons in wayland
   ];
 
-  services.pasystray.enable = true;
-  services.network-manager-applet.enable = true;
+  services.pasystray.enable = lib.mkDefault true;
+  services.network-manager-applet.enable = lib.mkDefault true;
 
   stylix.targets.waybar = {
     enable = true;
@@ -24,46 +24,17 @@
         postion = "top";
 
         modules-left = ["custom/logo" "hyprland/workspaces"];
-        # modules-center = ["hyprland/window"];
         modules-right = ["tray" "battery" "clock"];
 
         "custom/logo" = {
           format = "";
         };
 
-        # use network manager applet instead
-        # network = {
-        #   format = "{ifname}";
-        #   format-wifi = "󰖩";
-        #   format-ethernet = "";
-        #   format-disconnected = "󰖪";
-        #   tooltip-format = "{ifname} via {gwaddr} 󰊗";
-        #   tooltip-format-wifi = "{essid} ({signalStrength}%) ";
-        #   tooltip-format-ethernet = "{ifname} ";
-        #   tooltip-format-disconnected = "Disconnected";
-        #   max-length = 50;
-        # };
-
         "hyprland/window" = {
           max-length = 50;
           icon = true;
           format = "{title}";
         };
-
-        # use pasystray instead
-        # pulseaudio = {
-        #   format = "{icon}";
-        #   on-click = "hyprctl dispatch exec [float\\;move 100%-w-20 10%\\;noanim] ${pkgs.pavucontrol}/bin/pavucontrol";
-        #   tooltip = false;
-        #   "format-muted" = "";
-        #   "format-icons" = {
-        #     default = [
-        #       ""
-        #       ""
-        #       ""
-        #     ];
-        #   };
-        # };
 
         battery = {
           format = "{icon}";
@@ -93,5 +64,4 @@
     style =
       lib.mkAfter (lib.readFile ./style.css);
   };
-  # xdg.configFile."waybar/config.jsonc".source = config.lib.file.mkOutOfStoreSymlink ./config.jsonc;
 }

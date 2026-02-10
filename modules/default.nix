@@ -2,11 +2,13 @@ _: {
   imports = [
     ./apps
     ./boot.nix
+    ./display-manager.nix
     ./fonts.nix
     ./home-manager.nix
-    ./hyprland
+    #./hyprland
     ./locale.nix
     ./networking.nix
+    ./niri
     ./nix-tools.nix
     ./plymouth.nix
     ./ssh.nix
@@ -14,6 +16,5 @@ _: {
     ./syncthing.nix
     ./system.nix
     ./users.nix
-    ./niri
   ];
 }

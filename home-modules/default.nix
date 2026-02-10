@@ -1,22 +1,17 @@
 {...}: {
   imports = [
-    ./hyprland
-    ./programs.nix
-    ./nvf.nix
-    ./starship.nix
     ./bash.nix
-    ./stylix.nix
-    ./rofi
+    ./dankmaterialshell.nix
     ./ghostty.nix
-    ./nushell.nix
-    ./xdg.nix
-    ./ssh.nix
     ./git.nix
+    #./hyprland
+    ./nushell.nix
+    ./nvf.nix
+    ./programs.nix
+    #./rofi
+    ./ssh.nix
+    ./starship.nix
+    ./stylix.nix
+    ./xdg.nix
   ];
-
-  # catppuccin = {
-  #   flavor = "mocha";
-  #   enable = true;
-  #   # cursors.enable = true;
-  # };
 }
