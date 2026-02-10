@@ -67,8 +67,8 @@
         };
 
         modules = [
-          ./hosts/claptop
           nixos-hardware.nixosModules.lenovo-thinkpad-e14-amd
+          ./hosts/claptop
         ];
       };
     };

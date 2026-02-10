@@ -30,6 +30,7 @@
       dockerManager.enable = true;
       dankKDEConnect.enable = true;
       tailscale.enable = true;
+      dmsLenovoBatterySettings.enable = true;
 
       mediaPlayer = {
         enable = true;

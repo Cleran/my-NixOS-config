@@ -1,4 +1,4 @@
-{pkgs,...}: {
+{pkgs,lib,...}: {
   nixpkgs.config.allowUnfree = true;
 
   nix.settings.experimental-features = ["nix-command" "flakes" "pipe-operators"];
@@ -25,6 +25,10 @@
   };
   #######
 
+  services.acpid.enable = lib.mkDefault true;
+
+  services.power-profiles-daemon.enable = true;
+  services.upower.enable = true;
 
   system.stateVersion = "25.11";
 }
