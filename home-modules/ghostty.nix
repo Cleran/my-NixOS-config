@@ -11,7 +11,7 @@
       # gtk-adwaita = false;
       theme = "Catppuccin Mocha";
       font-family = [ "JetBrainsMono Nerd Font" "Twitter Color Emoji" ];
-      font-size = 16;
+      font-size = 12;
     };
   };
 }
