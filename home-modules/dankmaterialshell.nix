@@ -63,4 +63,8 @@
       path = lib.getExe pkgs.xwayland-satellite;
     };
   };
+
+  home.packages = with pkgs; [
+    nautilus # niri uses this as file picker
+  ];
 }
