@@ -1,11 +1,11 @@
 _: {
   imports = [
+    #./hyprland
     ./apps
     ./boot.nix
     ./display-manager.nix
     ./fonts.nix
     ./home-manager.nix
-    #./hyprland
     ./locale.nix
     ./networking.nix
     ./niri
@@ -15,7 +15,7 @@ _: {
     ./stylix.nix
     ./syncthing.nix
     ./system.nix
-    ./virtualisation.nix
     ./users.nix
+    ./virtualisation.nix
   ];
 }

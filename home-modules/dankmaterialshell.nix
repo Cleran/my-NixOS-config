@@ -1,4 +1,10 @@
-{inputs,lib,...}:{
+{
+  inputs,
+  lib,
+  pkgs,
+  ...
+}:
+{
   imports = [
     inputs.dms.homeModules.dank-material-shell
     inputs.dms-plugin-registry.modules.default
@@ -7,7 +13,7 @@
 
   programs.dank-material-shell = {
     enable = true;
-    
+
     systemd = {
       enable = false;
       restartIfChanged = false;
@@ -25,7 +31,8 @@
       dynamicTheming = true;
     };
 
-    plugins = { # danklinux.com/plugins
+    plugins = {
+      # danklinux.com/plugins
       dankBatteryAlerts.enable = true;
       dockerManager.enable = true;
       dankKDEConnect.enable = true;
@@ -46,6 +53,14 @@
 
         override = true;
       };
+    };
+  };
+
+  programs.niri.settings = {
+    environment."NIXOS_OZONE_WL" = "1";
+    xwayland-satellite = {
+      enable = true;
+      path = lib.getExe pkgs.xwayland-satellite;
     };
   };
 }

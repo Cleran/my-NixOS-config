@@ -20,6 +20,8 @@
 
     zathura.enable = true;
 
+    discord.enable = true;
+
     # CLI
     fzf.enable = true;
     btop.enable = true;
