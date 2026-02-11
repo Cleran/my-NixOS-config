@@ -1,6 +1,7 @@
 {
   inputs,
   username,
+  flakeDirectory,
   ...
 }: {
   imports = [
@@ -10,7 +11,7 @@
     useUserPackages = true;
     useGlobalPkgs = false;
     backupFileExtension = "bak";
-    extraSpecialArgs = {inherit inputs username;};
+    extraSpecialArgs = {inherit inputs username flakeDirectory;};
 
     users.${username} = {
       imports = [

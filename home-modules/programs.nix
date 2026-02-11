@@ -52,6 +52,5 @@
     };
 
     tmux.enable = true;
-    zellij.enable = true;
 	};
 }

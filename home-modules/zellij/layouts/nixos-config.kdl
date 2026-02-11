@@ -1,0 +1,35 @@
+layout {
+  cwd "~/Documents/my-NixOS-config/"
+  pane_template name="default" {
+    pane size=1 borderless=true {
+        plugin location="tab-bar"
+    }
+    children
+    pane size=1 borderless=true {
+        plugin location="status-bar"
+    }
+  }
+
+  tab name="vim" {
+    default {
+      pane command="vim"
+    }
+  }
+  tab name="shell" {
+    default {
+      pane
+    }
+  }
+  tab name="git"{
+    default {
+      pane command="lazygit"
+    }
+  }
+}
+keybinds {
+    shared {
+        bind "Alt 1" { GoToTab 1; }
+        bind "Alt 2" { GoToTab 2; }
+        bind "Alt 3" { GoToTab 3; }
+    }
+}

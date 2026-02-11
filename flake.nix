@@ -36,6 +36,7 @@
   } @ inputs: let
     system = "x86_64-linux";
     username = "cleran";
+    flakeDirectory = "/home/cleran/Documents/my-NixOS-config";
 
     pkgs = import nixpkgs {
       inherit system;
@@ -51,6 +52,7 @@
         specialArgs = {
           inherit inputs;
           inherit username;
+          inherit flakeDirectory;
           hostName = "nixos";
         };
 
@@ -63,6 +65,7 @@
         specialArgs = {
           inherit inputs;
           inherit username;
+          inherit flakeDirectory;
           hostName = "claptop";
         };
 
