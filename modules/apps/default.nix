@@ -6,6 +6,8 @@
     };
 
     git.enable = true;
+
+    steam.enable = true;
   };
 
   environment.systemPackages = with pkgs; [
