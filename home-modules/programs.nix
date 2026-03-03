@@ -7,6 +7,8 @@
     gedit
     yt-dlp
     vlc
+
+    xournalpp
   ];
 
 	programs = {
