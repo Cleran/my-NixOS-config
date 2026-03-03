@@ -19,6 +19,7 @@
     obsidian.enable = true;
 
     vscode.enable = true;
+    zed-editor.enable = true;
 
     zathura.enable = true;
 
