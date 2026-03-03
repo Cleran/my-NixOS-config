@@ -22,6 +22,13 @@
 
     discord.enable = true;
 
+    thunderbird = {
+      enable = true;
+      profiles."Default" = {
+        isDefault = true;
+      };
+    };
+
 
     # CLI
     fzf.enable = true;
