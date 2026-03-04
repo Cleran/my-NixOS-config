@@ -5,6 +5,7 @@
     ./bash.nix
     ./bitwarden.nix
     ./dankmaterialshell.nix
+    ./documentation.nix
     ./ghostty.nix
     ./git.nix
     ./nushell.nix

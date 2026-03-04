@@ -4,6 +4,7 @@ _: {
     ./apps
     ./boot.nix
     ./display-manager.nix
+    ./documentation.nix
     ./fonts.nix
     ./home-manager.nix
     ./locale.nix
