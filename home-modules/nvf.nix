@@ -18,7 +18,7 @@
       options = {
         tabstop = 2;
         shiftwidth = 0; # if set to 0 it follows tabstop
-        expandtab = true; # expands tabs to spaces
+        expandtab = false; # expands tabs to spaces
         wrap = false;
         cursorline = true;
         cursorlineopt = "both";
@@ -51,6 +51,7 @@
         html.enable = true;
         nu.enable = true;
         ts.enable = true;
+        julia.enable = true;
       };
 
       diagnostics = {

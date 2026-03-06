@@ -9,6 +9,8 @@
     vlc
 
     xournalpp
+
+    julia
   ];
 
 	programs = {
