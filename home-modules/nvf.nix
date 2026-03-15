@@ -16,7 +16,7 @@
       };
 
       options = {
-        tabstop = 2;
+        tabstop = 4;
         shiftwidth = 0; # if set to 0 it follows tabstop
         expandtab = false; # expands tabs to spaces
         wrap = false;
@@ -44,14 +44,16 @@
         enableFormat = true;
         enableTreesitter = true;
 
-        nix.enable = true;
+        bash.enable = true;
+        clang.enable = true;
         css.enable = true;
+        html.enable = true;
+        julia.enable = true;
         lua.enable = true;
         markdown.enable = true;
-        html.enable = true;
+        nix.enable = true;
         nu.enable = true;
         ts.enable = true;
-        julia.enable = true;
       };
 
       diagnostics = {
