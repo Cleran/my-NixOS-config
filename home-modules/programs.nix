@@ -1,4 +1,5 @@
-{pkgs,...}: {
+{ pkgs, ... }:
+{
   home.sessionVariables.BROWSER = "brave";
 
   home.packages = with pkgs; [
@@ -13,9 +14,9 @@
     julia
   ];
 
-	programs = {
+  programs = {
     # GUI
-		firefox.enable = false;
+    firefox.enable = false;
     brave.enable = true;
 
     obsidian.enable = true;
@@ -34,7 +35,6 @@
       };
     };
 
-
     # CLI
     fzf.enable = true;
     btop.enable = true;
@@ -50,7 +50,12 @@
     fd.enable = true;
     fastfetch.enable = true;
 
-    yazi.enable = true;
+    yazi = {
+      enable = true;
+      enableNushellIntegration = true;
+      enableBashIntegration = true;
+      shellWrapperName = "y";
+    };
 
     lazygit.enable = true;
 
@@ -65,5 +70,5 @@
     };
 
     tmux.enable = true;
-	};
+  };
 }

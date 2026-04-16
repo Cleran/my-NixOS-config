@@ -2,6 +2,7 @@
 {
   imports = [ inputs.nvf.homeManagerModules.default ];
 
+  stylix.targets.nvf.enable = false;
   home.sessionVariables.EDITOR = "nvim";
 
   programs.nvf = {

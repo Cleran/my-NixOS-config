@@ -1,10 +1,12 @@
-{...}: {
+{ ... }:
+{
   xdg = {
     enable = true;
     autostart.enable = true;
     userDirs = {
       enable = true;
       createDirectories = true;
+      setSessionVariables = true;
     };
     mimeApps = {
       enable = true;

@@ -1,23 +1,28 @@
-{pkgs, ...}: {
+{ pkgs, ... }:
+{
   gtk.enable = true;
+  gtk.gtk4.theme = null;
   qt.enable = true;
 
-  stylix.targets = {
-    mako.enable = false;
-    hyprland.enable = false;
-    vscode.enable = false;
-    wpaperd.enable = false;
-    niri.enable = false;
+  stylix = {
 
-    zellij.enable = true;
-  };
+    targets = {
+      mako.enable = false;
+      hyprland.enable = false;
+      vscode.enable = false;
+      wpaperd.enable = false;
+      niri.enable = false;
 
-  stylix.autoEnable = false;
+      zellij.enable = true;
+    };
 
-  stylix.icons = {
-    enable = false;
-    package = pkgs.papirus-icon-theme;
-    dark = "Papirus-Dark";
-    light = "Papirus-Light";
+    autoEnable = true;
+
+    icons = {
+      enable = false;
+      package = pkgs.papirus-icon-theme;
+      dark = "Papirus-Dark";
+      light = "Papirus-Light";
+    };
   };
 }
