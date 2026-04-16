@@ -3,6 +3,7 @@ _: {
     #./hyprland
     ./apps
     ./boot.nix
+	./bluetooth.nix
     ./display-manager.nix
     ./documentation.nix
     ./fonts.nix
