@@ -32,11 +32,17 @@
         fcitx5-gtk
         kdePackages.fcitx5-qt
         kdePackages.fcitx5-chinese-addons
+        catppuccin-fcitx5
       ];
       fcitx5.waylandFrontend = true;
     };
   };
-
+  environment.sessionVariables = {
+    XMODIFIERS = "@im=fcitx";
+  };
+  environment.systemPackages = [
+    pkgs.papirus-icon-theme
+  ];
   # Configure console keymap
   console.keyMap = "us";
 }
