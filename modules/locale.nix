@@ -40,9 +40,6 @@
   environment.sessionVariables = {
     XMODIFIERS = "@im=fcitx";
   };
-  environment.systemPackages = [
-    pkgs.papirus-icon-theme
-  ];
   # Configure console keymap
   console.keyMap = "us";
 }

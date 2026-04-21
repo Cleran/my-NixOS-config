@@ -12,6 +12,8 @@
     xournalpp
 
     julia
+
+	javaPackages.compiler.openjdk21
   ];
 
   programs = {
@@ -34,6 +36,8 @@
         isDefault = true;
       };
     };
+
+	prismlauncher.enable = true;
 
     # CLI
     fzf.enable = true;
