@@ -44,6 +44,7 @@
         enableExtraDiagnostics = true;
         enableFormat = true;
         enableTreesitter = true;
+		enableDAP = true;
 
         bash.enable = true;
         clang.enable = true;
@@ -63,6 +64,7 @@
           virtual_lines = true;
         };
       };
+	
 
       mini = {
         icons.enable = true;
