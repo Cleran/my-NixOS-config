@@ -3,7 +3,7 @@
 {
   hardware.bluetooth = {
     enable = true;
-    powerOnBoot = true;
+    powerOnBoot = false;
     settings = {
       General = {
         # Shows battery charge of connected devices on supported
