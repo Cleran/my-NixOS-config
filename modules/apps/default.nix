@@ -1,13 +1,19 @@
-{pkgs, ...}: {
+{ pkgs, ... }:
+{
   programs = {
     thunar = {
       enable = true;
-      plugins = with pkgs; [thunar-archive-plugin thunar-volman];
+      plugins = with pkgs; [
+        thunar-archive-plugin
+        thunar-volman
+      ];
     };
 
     git.enable = true;
 
     steam.enable = true;
+
+    nix-ld.enable = true;
   };
 
   environment.systemPackages = with pkgs; [
@@ -29,9 +35,9 @@
     ffmpegthumbnailer # for thunar preview
   ];
 
-	# https://nixos.wiki/wiki/Flatpak
-	services.flatpak.enable = true;
-	systemd.services.flatpak-repo = {
+  # https://nixos.wiki/wiki/Flatpak
+  services.flatpak.enable = true;
+  systemd.services.flatpak-repo = {
     wantedBy = [ "multi-user.target" ];
     path = [ pkgs.flatpak ];
     script = ''
