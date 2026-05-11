@@ -44,7 +44,7 @@
         enableExtraDiagnostics = true;
         enableFormat = true;
         enableTreesitter = true;
-		enableDAP = true;
+        enableDAP = true;
 
         bash.enable = true;
         clang.enable = true;
@@ -55,7 +55,7 @@
         markdown.enable = true;
         nix.enable = true;
         nu.enable = true;
-        ts.enable = true;
+        typescript.enable = true;
       };
 
       diagnostics = {
@@ -64,7 +64,6 @@
           virtual_lines = true;
         };
       };
-	
 
       mini = {
         icons.enable = true;
@@ -74,6 +73,22 @@
         snippets.enable = true;
         pairs.enable = true;
         surround.enable = true;
+      };
+
+      terminal.toggleterm = {
+        enable = true;
+        setupOpts = {
+          direction = "float";
+        };
+        mappings = {
+          open = "<leader>tt";
+        };
+        lazygit = {
+          enable = true;
+          mappings = {
+            open = "<leader>gg";
+          };
+        };
       };
 
       autocomplete.blink-cmp = {
@@ -158,6 +173,8 @@
           desc = "Move right in insert mode";
         }
       ];
+
     };
   };
+
 }
