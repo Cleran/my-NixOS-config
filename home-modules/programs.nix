@@ -13,7 +13,7 @@
 
     julia
 
-	javaPackages.compiler.openjdk21
+    javaPackages.compiler.openjdk21
   ];
 
   programs = {
@@ -37,7 +37,7 @@
       };
     };
 
-	prismlauncher.enable = true;
+    prismlauncher.enable = true;
 
     # CLI
     fzf.enable = true;
@@ -53,6 +53,8 @@
     jq.enable = true;
     fd.enable = true;
     fastfetch.enable = true;
+
+    bun.enable = true;
 
     yazi = {
       enable = true;
