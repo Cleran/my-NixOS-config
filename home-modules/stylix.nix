@@ -1,7 +1,7 @@
-{ pkgs, ... }:
+{ pkgs, lib,  ... }:
 {
   gtk.enable = true;
-  gtk.gtk4.theme = null;
+  gtk.gtk4.theme = lib.mkDefault null;
   qt.enable = true;
 
   stylix = {

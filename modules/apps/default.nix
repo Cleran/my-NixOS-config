@@ -12,6 +12,7 @@
     git.enable = true;
 
     steam.enable = true;
+	steam.protontricks.enable = true;
 
     nix-ld.enable = true;
   };
@@ -30,6 +31,9 @@
     aria2
     bat
     gh
+
+    # gui
+    gparted
 
     # dependencies
     ffmpegthumbnailer # for thunar preview

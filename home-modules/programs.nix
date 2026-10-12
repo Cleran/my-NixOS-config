@@ -16,6 +16,8 @@
     javaPackages.compiler.openjdk21
   ];
 
+	services.udiskie.enable = true;
+
   programs = {
     # GUI
     firefox.enable = false;

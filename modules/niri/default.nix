@@ -10,7 +10,7 @@
 
   programs.niri = {
     enable = lib.mkDefault true;
-    package = pkgs.niri-unstable;
+    package = pkgs.niri;
   };
   systemd.user.services.niri-flake-polkit.enable = false; # avoid conflict with dms built-in polkit agent
 }

@@ -1,0 +1,5 @@
+error: unexpected argument 'tail' found
+
+Usage: nh os boot [OPTIONS] [INSTALLABLE] [-- <EXTRA_ARGS>...]
+
+For more information, try '--help'.

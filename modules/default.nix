@@ -3,7 +3,7 @@ _: {
     #./hyprland
     ./apps
     ./boot.nix
-	./bluetooth.nix
+    ./bluetooth.nix
     ./display-manager.nix
     ./documentation.nix
     ./fonts.nix
@@ -18,6 +18,7 @@ _: {
     ./syncthing.nix
     ./system.nix
     ./users.nix
+    ./other.nix
     ./virtualisation.nix
   ];
 }

@@ -56,6 +56,8 @@
         nix.enable = true;
         nu.enable = true;
         typescript.enable = true;
+		vue.enable = true;
+		haskell.enable = true;
       };
 
       diagnostics = {
