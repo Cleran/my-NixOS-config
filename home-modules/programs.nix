@@ -8,6 +8,7 @@
     gedit
     yt-dlp
     vlc
+	zip
 
     xournalpp
 

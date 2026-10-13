@@ -6,3 +6,4 @@
     - set appropriate layout
     - fuzzy find projects
     - automatically use the correct ssh-key
+- remove julia

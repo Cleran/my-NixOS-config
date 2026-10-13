@@ -56,8 +56,12 @@
         nix.enable = true;
         nu.enable = true;
         typescript.enable = true;
-		vue.enable = true;
-		haskell.enable = true;
+        vue.enable = true;
+        haskell = {
+          enable = true;
+          lsp.enable = false; # required because haskell-tools already handles lsp
+          extensions.haskell-tools.enable = true;
+        };
       };
 
       diagnostics = {
