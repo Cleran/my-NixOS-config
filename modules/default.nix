@@ -2,8 +2,9 @@ _: {
   imports = [
     #./hyprland
     ./apps
-    ./boot.nix
     ./bluetooth.nix
+    ./boot.nix
+    ./db.nix
     ./display-manager.nix
     ./documentation.nix
     ./fonts.nix
@@ -12,13 +13,13 @@ _: {
     ./networking.nix
     ./niri
     ./nix-tools.nix
+    ./other.nix
     ./plymouth.nix
     ./ssh.nix
     ./stylix.nix
     ./syncthing.nix
     ./system.nix
     ./users.nix
-    ./other.nix
     ./virtualisation.nix
   ];
 }
