@@ -13,4 +13,8 @@
     package = pkgs.niri;
   };
   systemd.user.services.niri-flake-polkit.enable = false; # avoid conflict with dms built-in polkit agent
+	
+  environment.systemPackages = with pkgs; [
+		wl-mirror
+  ];
 }
