@@ -59,8 +59,8 @@
         vue.enable = true;
         haskell = {
           enable = true;
-          lsp.enable = false; # required because haskell-tools already handles lsp
-          extensions.haskell-tools.enable = true;
+          dap.enable = false;
+          extensions.haskell-tools.enable = false;
         };
       };
 
